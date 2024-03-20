@@ -11,6 +11,12 @@ body {
 }
 
 /* Navigation Bar */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index if necessary */
+}
 .navbar {
     background-color: #000;
     padding: 10px 0;
@@ -65,6 +71,16 @@ body {
     max-width: 300px;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+
+.enlarged {
+    transform: scale(1.5); /* Enlarge the image */
+    z-index: 999; /* Ensure the enlarged image appears on top */
+}
+
+.service-img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
 }
 
 /* About Us Section */
@@ -164,4 +180,155 @@ body {
 .footer-box .btn-primary:hover {
     background-color: #c0c0c0; /* Lighter gold color */
     border-color: #c0c0c0; /* Lighter gold color */
+}
+/* Login Section */
+#login {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically on the page */
+}
+
+.login-form {
+    max-width: 400px; /* Adjust width as needed */
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.login-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffd700; /* Gold color */
+    text-align: center;
+}
+
+/* Sign Up Section */
+#signup {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically on the page */
+}
+
+.signup-form {
+    max-width: 400px; /* Adjust width as needed */
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.signup-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffd700; /* Gold color */
+    text-align: center;
+}
+/* Navbar Search Bar */
+.navbar-form {
+    margin-right: 20px;
+}
+
+.navbar-form input[type="search"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+    padding: 6px 10px;
+    transition: border-color 0.3s ease;
+}
+
+.navbar-form input[type="search"]::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.navbar-form input[type="search"]:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+.navbar-form button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Cart Icon */
+.navbar-cart {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.navbar-cart .fa-shopping-cart {
+    font-size: 24px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.navbar-cart .cart-label {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Profile Link */
+.navbar-profile {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar-profile:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Checkout Link */
+.navbar-checkout {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar-checkout:hover {
+    color: #ffd700; /* Change color on hover */
+}
+#profile {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.profile-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffd700; /* Gold color */
+}
+
+/* Checkout Page */
+#checkout {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.checkout-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffd700; /* Gold color */
 }
